@@ -56,7 +56,6 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 <hr>
 <h2>Algorithm:</h2>
-<hr>
 <ol>
   <li>Construct a Graph with Nodes and Edges</li>
  <li>Breadth First Uses Queue and iterates through the Queue for Traversal.</li>
@@ -112,13 +111,13 @@ D E <BR>
 D G <BR>
 G F <BR>
 <hr>
-<h3>Sample Output</h3>
+<h3>Output</h3>
 
 ![WhatsApp Image 2023-10-27 at 11 33 39_ddd7a716](https://github.com/SriSaiPriyaSenthilvel/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/119475702/70a03467-c1e2-47ca-8a26-867def31d2d1)
 
 <hr>
 
-<h3>Sample Input</h3>
+<h3>Input</h3>
 
 5 6 <BR>
 0 1 <BR>
@@ -137,9 +136,3 @@ G F <BR>
 
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
 </hr>
-
-
-
-
-
-
