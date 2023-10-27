@@ -55,7 +55,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 </ol></B>
 <hr>
 
-## PROGRAM:
+## Program:
 ```
 from collections import defaultdict
 def dfs(graph,start,visited,path):
@@ -93,15 +93,13 @@ D F <BR>
 G F <BR>
 F H <BR>
 <hr>
+
 <h3>Output:</h3>
-<hr>
 
 ![WhatsApp Image 2023-10-27 at 11 16 06_095ebb15](https://github.com/SriSaiPriyaSenthilvel/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/119475702/ebca2408-3354-44bf-a7e1-37c6acd3e5d4)
-
 <hr>
-
 
 <h3>Result:</h3>
-<hr>
-<p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
 
+<p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
+<hr>
