@@ -53,13 +53,36 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>Find its Successors Or neighbors and Check whether the node is visited or not</li>
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
+<hr>
 
-PROGRAM:
+<h3>PROGRAM:</h3>
 
+from collections import defaultdict
+def dfs(graph,start,visited,path):
+    path.append(start)
+    visited[start]=True
+    for neighbour in graph[start]:
+        if visited[neighbour]==False:
+            dfs(graph,neighbour,visited,path)
+            visited[neighbour]=True
+    return path
 
+graph=defaultdict(list)
+n,e=map(int,input().split())
+for i in range(e):
+    u,v=map(str,input().split())
+    graph[v].append(u)
+    graph[u].append(v)
+#print(graph)
+start='A'
+visited=defaultdict(bool)
+path=[]
+traversedpath= dfs(graph,start,visited,path)
+print(traversedpath)
 
 <hr>
-<h3>Sample Input</h3>
+
+<h3>Input:</h3>
 <hr>
 8 9 <BR>
 A B <BR>
@@ -72,27 +95,13 @@ D F <BR>
 G F <BR>
 F H <BR>
 <hr>
-<h3>Sample Output</h3>
+<h3>Output:</h3>
 <hr>
-['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
+![WhatsApp Image 2023-10-27 at 11 16 06_095ebb15](https://github.com/SriSaiPriyaSenthilvel/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/119475702/ebca2408-3354-44bf-a7e1-37c6acd3e5d4)
 
 <hr>
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-5 5 <BR>
-0 1 <BR>
-0 2 <BR>
-0 3 <BR>
-2 3 <BR>
-2 4 <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
-['0', '1', '2', '3', '4']
 
-<hr>
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
