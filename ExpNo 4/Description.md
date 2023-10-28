@@ -83,4 +83,5 @@ SimpleHillClimbing()
 
 ![278657319-847eaf47-febb-4834-817e-3efea858199c](https://github.com/SriSaiPriyaSenthilvel/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/119475702/ac72dc5e-0b4b-4b23-99cd-810f3f8a9a07)
 
-## Result: Thus the program SimpleHillClimbing is successfully implemented.
+## Result: 
+Thus the program SimpleHillClimbing is successfully implemented.
